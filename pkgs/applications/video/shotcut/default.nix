@@ -15,6 +15,7 @@
 , qttools
 , qtmultimedia
 , qtcharts
+, qtwayland
 , cmake
 , gitUpdater
 }:
@@ -41,6 +42,7 @@ stdenv.mkDerivation (finalAttrs: {
     qttools
     qtmultimedia
     qtcharts
+    qtwayland
   ];
 
   env.NIX_CFLAGS_COMPILE = "-DSHOTCUT_NOUPGRADE";
